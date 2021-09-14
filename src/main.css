@@ -1,58 +1,26 @@
 body {
   font-family: "Roboto Mono", monospace;
-  background-color: #00b4d8;
+  background-color: #007ed8;
 }
 
 .container {
+  color: #ffffff;
   text-align: center;
   padding: 20px;
   margin-top: 10px;
 }
 
+#result {
+  margin: 10px;
+}
+
 .page-title {
-  color: #ffffff;
   margin: 0 0 5px;
 }
 
-.calc-converter {
-  min-height: 300px;
-  margin-bottom: 50px;
-}
-
 .page-subtitle {
-  color: #ffffff;
   margin-top: 5px;
   height: 50px;
-}
-
-.calculator {
-  color: #ffffff;
-  float: left;
-  width: 33%;
-  min-width: 300px;
-  height: 300px;
-}
-
-.temperature-converter {
-  color: #ffffff;
-  float: left;
-  width: 33%;
-  min-width: 300px;
-  height: 300px;
-}
-
-.currency-converter {
-  color: #ffffff;
-  float: left;
-  width: 33%;
-  min-width: 300px;
-  height: 300px;
-}
-
-.final-grade {
-  color: #ffffff;
-  font-size: 20px;
-  margin-top: 10px;
 }
 
 .page-logo {
