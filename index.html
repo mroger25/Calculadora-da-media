@@ -13,20 +13,48 @@
       />
       <h1 class="page-title">Conversor de Moedas</h1>
       <div class="currency-converter">
-        <p class="page-subtitle">Converte o valor de moedas</p>
         <form>
-          <input type="radio" id="dolarEmReal" name="tipoConversao" />
-          <label for="dolarEmReal">Converter dólar para real</label><br />
-          <input type="radio" id="realEmDolar" name="tipoConversao" />
-          <label for="realEmDolar">Converter real para dólar</label><br /><br />
+          <div class="convert-opts">
+            <div class="row">
+              <input type="radio" name="tipoConversao" id="dolarEmReal" />
+              <label for="dolarEmReal"> Converter dólar para real </label>
+            </div>
+            <div class="row">
+              <input type="radio" name="tipoConversao" id="realEmDolar" />
+              <label for="realEmDolar"> Converter real para dólar </label>
+            </div>
+            <div class="row">
+              <input type="radio" name="tipoConversao" id="dolarEmBit" />
+              <label for="dolarEmBit"> Converter dólar para bitcoin </label>
+            </div>
+            <div class="row">
+              <input type="radio" name="tipoConversao" id="bitEmDolar" />
+              <label for="bitEmDolar"> Converter bitcoin para dólar </label>
+            </div>
+          </div>
+
           <label for="moeda">Insira o valor</label><br />
-          <input type="number" id="moeda" name="moeda" size="2" /><br /><br />
-          <input type="button" value="Converter" id="currencyButton" />
-          <input type="reset" value="Limpar" id="clear" />
+          <input type="number" id="moeda" name="moeda" size="2" /><br />
+          <div class="row">
+            <div class="buttons">
+              <input type="button" value="Converter" id="currencyButton" />
+            </div>
+            <div class="buttons">
+              <input type="reset" value="Limpar" id="clear" />
+            </div>
+          </div>
+          <br />
         </form>
+        <div id="result"></div>
       </div>
-      <div id="result"></div>
     </div>
+    <a href="https://alura.com.br/" target="_blank">
+      <img
+        src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+        alt=""
+        class="alura-logo"
+      />
+    </a>
     <a href="https://alura.com.br/" target="_blank">
       <img
         src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
