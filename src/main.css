@@ -24,7 +24,7 @@ body {
   width: 200px;
 }
 
-h1 {
+.page-title {
   font-weight: 400;
   margin: 10px 0;
   padding-bottom: 20px;
@@ -34,9 +34,9 @@ h1 {
 .currency-converter {
   color: #ffffff;
   background-color: #108cef;
-  max-width: 350px;
+  max-width: 400px;
   min-height: 250px;
-  padding: 12px 0;
+  padding: 20px 12px;
   margin: auto;
   border: 1px solid #fbffa2;
   border-radius: 10px;
@@ -49,13 +49,17 @@ h1 {
 
 input,
 label {
+  margin: 5px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-input[type="button"],
-input[type="reset"] {
+.valor-input {
+  padding: 10px;
+}
+
+.button {
   color: #ffffff;
   background-color: #fe4a67;
   float: right;

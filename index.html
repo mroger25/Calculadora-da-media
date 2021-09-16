@@ -11,43 +11,51 @@
         class="page-logo"
         alt=""
       />
+
       <h1 class="page-title">Conversor de Moedas</h1>
+
       <div class="currency-converter">
         <form>
+          <div class="valor">
+            <label for="moeda">Insira o valor a ser convertido em real</label>
+            <br />
+            <input
+              class="valor-input"
+              type="number"
+              id="moeda"
+              name="moeda"
+              size="2"
+            />
+          </div>
           <div class="convert-opts">
             <div class="row">
               <input type="radio" name="tipoConversao" id="dolarEmReal" />
-              <label for="dolarEmReal"> Converter dólar para real </label>
+              <label for="dolarEmReal"> Converter em dólar </label>
             </div>
             <div class="row">
-              <input type="radio" name="tipoConversao" id="realEmDolar" />
-              <label for="realEmDolar"> Converter real para dólar </label>
-            </div>
-            <div class="row">
-              <input type="radio" name="tipoConversao" id="dolarEmBit" />
-              <label for="dolarEmBit"> Converter dólar para bitcoin </label>
-            </div>
-            <div class="row">
-              <input type="radio" name="tipoConversao" id="bitEmDolar" />
-              <label for="bitEmDolar"> Converter bitcoin para dólar </label>
+              <input type="radio" name="tipoConversao" id="bitEmReal" />
+              <label for="bitEmReal"> Converter em bitcoin </label>
             </div>
           </div>
 
-          <label for="moeda">Insira o valor</label><br />
-          <input type="number" id="moeda" name="moeda" size="2" /><br />
           <div class="row">
             <div class="buttons">
-              <input type="button" value="Converter" id="currencyButton" />
+              <input
+                class="button"
+                type="button"
+                value="Converter"
+                id="currencyButton"
+              />
             </div>
             <div class="buttons">
-              <input type="reset" value="Limpar" id="clear" />
+              <input class="button" type="reset" value="Limpar" id="clear" />
             </div>
           </div>
-          <br />
         </form>
         <div id="result"></div>
       </div>
     </div>
+
     <a href="https://alura.com.br/" target="_blank">
       <img
         src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
@@ -62,6 +70,7 @@
         class="alura-logo"
       />
     </a>
+
     <script src="src/main.js"></script>
   </body>
 </html>
