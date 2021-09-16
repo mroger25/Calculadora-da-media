@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Imersão Dev Alura - Aula 02</title>
+    <title>Imersão Dev Alura - Aula 01</title>
     <link rel="stylesheet" href="src/main.css" />
   </head>
 
@@ -12,44 +12,32 @@
         alt=""
       />
 
-      <h1 class="page-title">Conversor de Moedas</h1>
+      <h1 class="page-title">Calculadora de média</h1>
 
-      <div class="currency-converter">
+      <div class="calculadora">
         <form>
-          <div class="valor">
-            <label for="moeda">Insira o valor a ser convertido em real</label>
-            <br />
-            <input
-              class="valor-input"
-              type="number"
-              id="moeda"
-              name="moeda"
-              size="2"
-            />
-          </div>
-          <div class="convert-opts">
+          <div class="notas">
             <div class="row">
-              <input type="radio" name="tipoConversao" id="dolarEmReal" />
-              <label for="dolarEmReal"> Converter em dólar </label>
+              <label for="nota1"> Nota do 1º bimestre </label>
+              <input type="number" name="nota1" class="nota" id="nota1" />
             </div>
             <div class="row">
-              <input type="radio" name="tipoConversao" id="bitEmReal" />
-              <label for="bitEmReal"> Converter em bitcoin </label>
+              <label for="nota2"> Nota do 2º bimestre </label>
+              <input type="number" name="nota2" class="nota" id="nota2" />
+            </div>
+            <div class="row">
+              <label for="nota3"> Nota do 3º bimestre </label>
+              <input type="number" name="nota3" class="nota" id="nota3" />
+            </div>
+            <div class="row">
+              <label for="nota4"> Nota do 4º bimestre </label>
+              <input type="number" name="nota4" class="nota" id="nota4" />
             </div>
           </div>
 
           <div class="row">
-            <div class="buttons">
-              <input
-                class="button"
-                type="button"
-                value="Converter"
-                id="currencyButton"
-              />
-            </div>
-            <div class="buttons">
-              <input class="button" type="reset" value="Limpar" id="clear" />
-            </div>
+            <button class="button" id="calcButton">Calcular</button>
+            <button class="button" id="resetButton">Limpar</button>
           </div>
         </form>
         <div id="result"></div>
